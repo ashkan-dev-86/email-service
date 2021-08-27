@@ -14,13 +14,13 @@ const config = {
     SECRET: "secretkey",
     EMAIL_HOST: "smtp.elasticemail.com",
     EMAIL_PORT: 2525,
-    EMAIL_USER: "ashi.dev@aol.com",
+    EMAIL_USER: "ashi.dev.86@gmail.com",
     EMAIL_PASS: "6B835612971CB680E59023E597FB524B0B97",
     EMAIL_DEFAULT_SUBJECT: "Email from a email delivery service",
     EMAIL_DEFAULT_MARKUP: "<b>Hello receiver</b>",
     EMAIL_KEY:
       "A8662C243B31A1DFB9CBBCBA6B3D64E9619D1563EDF6F84B8739FE6A98433BDB5B6DE866EFF2F52835A12927208562ED",
-    EMAIL_SENDER: '"Email Service" <ashi.dev@aol.com>',
+    EMAIL_SENDER: '"Email Service" <ashi.dev.86@gmail.com>',
   },
 };
 
