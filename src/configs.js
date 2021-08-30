@@ -9,6 +9,8 @@ const config = {
     EMAIL_DEFAULT_MARKUP: process.env.EMAIL_MARKUP,
     EMAIL_KEY: process.env.EMAIL_API_KEY,
     EMAIL_SENDER: process.env.EMAIL_SENDER,
+    EMAIL_SECURE: process.env.EMAIL_SECURE,
+    EMAIL_TLS: process.env.EMAIL_TLS
   },
   default: {
     SECRET: "secretkey",
@@ -21,6 +23,8 @@ const config = {
     EMAIL_KEY:
       "A8662C243B31A1DFB9CBBCBA6B3D64E9619D1563EDF6F84B8739FE6A98433BDB5B6DE866EFF2F52835A12927208562ED",
     EMAIL_SENDER: '"Email Service" <ashi.dev.86@gmail.com>',
+    EMAIL_SECURE: false,
+    EMAIL_TLS: false
   },
 };
 
