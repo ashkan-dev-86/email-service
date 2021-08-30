@@ -3,7 +3,8 @@ Email microservice implementation
 
 You need to pull this code and run npm install.
 I applied all default configs you need to test.
-But if you have a email-delivery-service that you want to replace with existing ones you can change the values in the config.js.
+But if you have a email-delivery-service that you want to replace with existing ones you can change the values in the config.js. (Be my guest)
+execute 'npm run start' or 'yarn start' to run the app.
 
 The domain you need to test: http://localhost:1049/email/send
 
