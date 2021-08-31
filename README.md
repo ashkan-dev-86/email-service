@@ -44,3 +44,7 @@ if you don't face error in the api, this should return a response like this:
         "messageId": "<8b461eec-6e86-1c42-ceff-2ecafe0fbaec@gmail.com>"
     }
 }
+
+I've used MVC architecture to implement this service.
+Your call has been lead to the controller implemented for respective api.
+The service related to api call uses logic class implemented for email-service.
