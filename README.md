@@ -5,6 +5,7 @@ You need to pull this code and run npm install or yarn install if you have insta
 I applied all default configs you need to test.
 But if you have a email-delivery-service that you want to replace with existing ones you can change the values in the config.js. (Be my guest)
 execute 'npm run start' or 'yarn start' if you have installed yarn on your machine to run the app.
+Please check your spam folder also to check receiving the email.
 
 The domain you need to test: http://localhost:1049/email/send
 
