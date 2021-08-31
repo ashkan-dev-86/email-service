@@ -1,10 +1,10 @@
 # email-service
 Email microservice implementation
 
-You need to pull this code and run npm install.
+You need to pull this code and run npm install or yarn install if you have installed yarn on your machine.
 I applied all default configs you need to test.
 But if you have a email-delivery-service that you want to replace with existing ones you can change the values in the config.js. (Be my guest)
-execute 'npm run start' or 'yarn start' to run the app.
+execute 'npm run start' or 'yarn start' if you have installed yarn on your machine to run the app.
 
 The domain you need to test: http://localhost:1049/email/send
 
@@ -44,6 +44,8 @@ if you don't face error in the api, this should return a response like this:
         "messageId": "<8b461eec-6e86-1c42-ceff-2ecafe0fbaec@gmail.com>"
     }
 }
+
+You need to execute 'npm test' or 'yarn test' if you have installed yarn on your machine to run the test.
 
 I've used MVC architecture to implement this service.
 Your call has been lead to the controller implemented for respective api.
