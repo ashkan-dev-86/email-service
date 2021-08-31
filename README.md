@@ -48,6 +48,6 @@ if you don't face error in the api, this should return a response like this:
 
 You need to execute 'npm test' or 'yarn test' if you have installed yarn on your machine to run the test.
 
-I've used MVC architecture to implement this service.
+I've used Express & MVC architecture to implement this service.
 Your call has been lead to the controller implemented for respective api.
 The service related to api call uses logic class implemented for email-service.
