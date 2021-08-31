@@ -1,5 +1,6 @@
 const config = {
   production: {
+    PORT: process.env.PORT,
     SECRET: process.env.SECRET,
     EMAIL_HOST: process.env.EMAIL_HOST,
     EMAIL_PORT: process.env.EMAIL_PORT,
@@ -13,6 +14,7 @@ const config = {
     EMAIL_TLS: process.env.EMAIL_TLS
   },
   default: {
+    PORT: 1056,
     SECRET: "secretkey",
     EMAIL_HOST: "smtp.elasticemail.com",
     EMAIL_PORT: 2525,

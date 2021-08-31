@@ -2,7 +2,6 @@
 const nodemailer = require("nodemailer");
 const errs = require("../enums/err.enum");
 const configs = require("../configs.js");
-const SMTPTransport = require("nodemailer/lib/smtp-transport");
 
 const config = configs.get(process.env.NODE_ENV);
 
@@ -15,24 +14,22 @@ exports.mailSender = async (req) => {
     throw err;
   }
 
-  let transporter = nodemailer.createTransport(
-    SMTPTransport({
-      host: config.EMAIL_HOST,
-      port: config.EMAIL_PORT,
-      secure: config.EMAIL_SECURE,
-      auth: {
-        user: config.EMAIL_USER,
-        pass: config.EMAIL_PASS,
-      },
-      tls: {
-        rejectUnauthorized: config.EMAIL_TLS,
-      },
-      headers: {
-        api_key: config.EMAIL_KEY,
-        "content-type": "application/json",
-      },
-    })
-  );
+  let transporter = nodemailer.createTransport({
+    host: config.EMAIL_HOST,
+    port: config.EMAIL_PORT,
+    secure: config.EMAIL_SECURE,
+    auth: {
+      user: config.EMAIL_USER,
+      pass: config.EMAIL_PASS,
+    },
+    tls: {
+      rejectUnauthorized: config.EMAIL_TLS,
+    },
+    headers: {
+      api_key: config.EMAIL_KEY,
+      "content-type": "application/json",
+    },
+  });
 
   let info;
 
